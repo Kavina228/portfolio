@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="css/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/c44dbc2ee4.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  
+</head>
+<body onload="loader()">
+    <div id="Loading"></div>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <nav class="navbar">
+            <a href="#home" style="--i:1">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#services" style="--i:3">Interest</a>
+            <a href="#portfolio" style="--i:4">Projects</a>
+            <a href="#contact" style="--i:5">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home" data-aos="zoom-in">
+        <div class="home-content">
+            <div class="text-container">
+                <h3>Hello, It's Me ,</h3>
+                <h1>KAVIN A </h1>
+                <h3>And I'm a  <span class="text"></span></h3>
+                <div class="home-sic">
+                    <a href="https://www.linkedin.com/in/kavin-a-b92039250"><i class="fa-brands fa-linkedin fa-beat-fade"></i></a>
+                    <a href="mailto:akavin634@gmail.com"><i class="fa-brands fa-google fa-shake"></i></a>
+                    <a href="https://github.com/Kavina228"><i class="fa-brands fa-github fa-beat-fade"></i></a>
+                </div>
+                <a href="kavin Resume1.pdf" class="btn">View Resume</a>
+            </div>
+            <img src="dp.webp" alt="" style="width: 350px;">
+        </div>
+    </section>
+
+    <center><h2 class="sub-title">About <span>Me</span></h2></center>
+    <section class="about" id="about" data-aos="zoom-in">
+        <div class="container">
+            <div class="left-section">
+                <img src="kavin (2).png" alt="Left Image">
+            </div>
+            <div class="right-section">
+                <h1>Developer</h1>
+                <p>Experienced in front-end development with a keen focus on UI and UX design, leveraging skills in HTML, CSS, and design principles to 
+                    create engaging and intuitive user interfaces.</p>
+                <div style="flex-grow: 1;"></div>
+                <a href="" style="text-decoration: none;color: aliceblue;"> 
+                <div class="card-section">
+                    
+                    <div class="card">
+                        <i class="fa-solid fa-graduation-cap fa-beat" style="color: #28a745;font-size: 35px;"></i>
+                        <h1 style="color: #000;">EDUCATION</h1>
+                        <p style="color: #000;">B.E. Computer Science and Engineering</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-language fa-beat" style="color: #28a745;font-size: 35px;"></i>
+                        <h1 style="color: #000 ;">Languages</h1>
+                        <p style="color: #000;">HTML, CSS, JS, C, JAVA</p>
+                    </div>
+                    <div class="card" id="project">
+                     <center>  <i class="fa-solid fa-diagram-project fa-beat" style="color: #28a745;font-size: 35px;"></i>
+                       <h1 style="color: #000;">Projects</h1>
+                        <p style="color: #000;">Built more than 3 Projects</p></center> 
+                    </div>
+                </div></a>  
+                <br>
+                <h1>Tools I use</h1><br>
+                <div class="card-container">
+                    <div class="card1"> <img src="https://iconape.com/wp-content/png_logo_vector/visual-studio-code.png" width="20px"></div>
+                    <div class="card1"> <img src="https://cdn.freebiesupply.com/logos/large/2x/git-icon-logo-png-transparent.png" width="20px"></div> 
+                    <div class="card1"> <img src="https://brandslogos.com/wp-content/uploads/images/large/figma-logo.png" width="14px"></div> 
+                    <div class="card1"> <img src="https://wiki.jenkins-ci.org/JENKINS/attachments/2916393/57409617.png" width="20px"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <center><h1 class="sub-title">My <span>Interest</span></h1></center>    
+    <section data-aos="zoom-in">
+        <div class="services" id="services">
+            <div class="container">
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code fa-beat" style="color: #28a745;"></i>
+                        <h2>Web Development</h2>
+                        <p>"Crafting responsive and visually engaging websites tailored to showcase your unique brand and skills effectively."</p>
+                        <a href="https://github.com/Kavina228" class="read">Read More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop-simple fa-beat" style="color: #28a745;"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>"Designing intuitive and user-centric interfaces that enhance the overall user experience and engagement."</p>
+                        <a href="https://github.com/Kavina228" class="read">Read More</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store fa-beat" style="color: #28a745;"></i>
+                        <h2>Video Editing</h2>
+                        <p>"Transforming raw footage into engaging and polished videos that tell a compelling story. From seamless transitions to captivating effects, we bring your vision to life with creativity and precision."</p>
+                        <a href="https://github.com/Kavina228" class="read">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-aos="zoom-in">
+        <div id="portfolio" id="project">
+            <div class="main-text">
+                <h2>Latest <span>Projects</span></h2>
+                <div class="portfolio-content">
+                    <!-- <div class="row">
+                        <img src="project2.png" alt="" style="margin-left: 60px;width: 75%;">
+                        <div class="layer" style="margin-left: 27px;">
+                            <h3 style="color: black;">UI/UX Design</h3>
+                            <p>Food Delivery app</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square fa-beat"></i></a>
+                        </div>
+                    </div> -->
+                    <div class="row">
+                        <img src="project1.png" alt="">
+                        <div class="layer">
+                            <h5>Full Stack Development</h5>
+                            <p>Complaint Registration System</p>
+                            <a href="https://github.com/Kavina228"><i class="fa-solid fa-up-right-from-square fa-beat"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="project2.png" alt="">
+                        <div class="layer">
+                            <h5>Front End Development</h5>
+                            <p>Movie Website</p>
+                            <a href="https://github.com/Kavina228"><i class="fa-solid fa-up-right-from-square fa-beat"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="project3.png" alt="">
+                        <div class="layer">
+                            <h5>UI/UX Design</h5>
+                            <p>Food Delivery App</p>
+                            <a href="https://github.com/Kavina228"><i class="fa-solid fa-up-right-from-square fa-beat"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact" data-aos="zoom-in">
+        
+        <div class="contact-text">
+            <h2 >Contact <span>Me</span></h2>
+            <div>
+            <h4>Let's work Together</h4>
+            <p>"Creative front-end developer with expertise in UI/UX design, crafting visually appealing and user-friendly web interfaces. Passionate about delivering seamless digital experiences and exploring innovations in cloud computing."</p>
+            <div class="contact-list">
+                <li><i class="fa-sharp fa-solid fa-paper-plane"></i> akavin634@gmail.com</li>
+                <li><i class="fa-sharp fa-solid fa-phone"></i> 9943658688</li>
+            </div>
+            <div class="contact-icons">
+                <a href="https://www.linkedin.com/in/kavin-a-b92039250"><i class="fa-brands fa-linkedin fa-beat-fade"></i></a>
+                <a href="mailto:akavin634@gmail.com"><i class="fa-brands fa-google fa-shake"></i></a>
+                <a href="https://github.com/Kavina228"><i class="fa-brands fa-github fa-beat-fade"></i></a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="https://formsubmit.co/c84ef09bc2fbda0eb3dfd0860223b6a6" method="POST">
+                <input type="text"name="name" placeholder="Enter Your Name" required>
+                <input type="text" name="lastname"placeholder="Enter Your Last Name">
+                <input type="email" name="email" placeholder="Enter Your Email" required>
+                <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message"></textarea>
+                <input type="submit" value="submit" class="send">
+            </form>
+        </div>
+    </section>
+
+    <div class="last-text">
+        <p>Developed with love by Kavin @ 2025</p>
+    </div>
+    <a href="#" class="top"><i class="fa-solid fa-arrow-up fa-beat-fade"></i></a>
+</div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Animation duration
+            easing: 'ease-in-out', // Easing function
+        });
+
+        // Job role typing effect
+        var typed = new Typed(".text", {
+            strings: ["Frontend Developer . . .", "UI/UX Designer . . .", "Software Developer . . .", "Full Stack Developer . . ."],
+            typeSpeed: 70,
+            backSpeed: 50,
+            backDelay: 1000,
+            loop: true
+        });
+    </script>
+
+<script>
+    function toggleMenu() {
+        document.querySelector(".navbar").classList.toggle("active");
+    }
+</script>
+</body>
+</html>
